@@ -1,0 +1,87 @@
+.cal-empty {
+  text-align: center;
+  padding: 80px 20px;
+  background: var(--bg-card);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-xl);
+}
+
+.cal-empty-icon {
+  font-size: 64px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.cal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 800px;
+}
+
+.cal-section-title {
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+.overdue-title { color: var(--danger); }
+
+.cal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cal-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: var(--transition);
+}
+.cal-item:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-sm);
+}
+.overdue-item {
+  border-color: rgba(239, 68, 68, 0.3);
+  background: rgba(239, 68, 68, 0.05);
+}
+
+.cal-item-color {
+  width: 4px;
+  height: 40px;
+  border-radius: var(--radius-full);
+}
+
+.cal-item-info {
+  flex: 1;
+}
+
+.cal-item-info h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.cal-item-info p {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.cal-item-status {
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.overdue-text { color: var(--danger); }
+.urgent-text { color: var(--warning); }
+.normal-text { color: var(--accent); }
